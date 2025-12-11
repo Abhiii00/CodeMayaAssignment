@@ -1,23 +1,3 @@
-# CodeMayaAssignment
-## Backend Setup (Node.js + Express)
-
-### 📌 Requirements
-- Node.js (v16+)
-- MongoDB
-- npm
-
----
-
-### 🚀 How to Run Backend
-
-#### 1️⃣ Navigate to the backend folder
-```bash
-cd backend
-npm install
-
-# -------------------------------------------------------------------------
-
-
 echo "## Installation" >> README.md
 echo "1. Run **npm install** to install dependencies." >> README.md
 echo "2. Run **npm start** to start the frontend development server." >> README.md
@@ -37,3 +17,6 @@ Manager@123
 For User : 
 john@gmail.com
 User@123
+
+
+
