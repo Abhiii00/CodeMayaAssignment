@@ -1,6 +1,6 @@
 const config = {
     baseUrl: "/",
 
-    API_URL: "http://localhost:3000",
+    API_URL: "http://3.26.15.137",
 }
 export default config;
