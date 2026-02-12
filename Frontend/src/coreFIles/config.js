@@ -1,6 +1,6 @@
 const config = {
     baseUrl: "/",
-
-    API_URL: "http://3.26.15.137:3000",
+    API_URL: "http://codemaya.duckdns.org",
 }
+
 export default config;
