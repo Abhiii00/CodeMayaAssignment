@@ -6,15 +6,8 @@ const routes = require("./src/routes/index");
 
 const app = express();
 
-app.use(
-  cors({
-    origin: [
-      "http://codemaya.duckdns.org"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+app.use(cors({ origin: "*" }));
+
 app.use(express.json());
 
 connectDB();
