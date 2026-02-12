@@ -6,7 +6,15 @@ const routes = require("./src/routes/index");
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://codemaya.duckdns.org"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 connectDB();
@@ -17,4 +25,6 @@ app.get('/', (req, res)=>{
 })
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
